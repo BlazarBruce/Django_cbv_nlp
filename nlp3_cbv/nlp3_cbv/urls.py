@@ -13,9 +13,19 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from django.contrib import admin
-from django.urls import path
+from django.contrib import admin  # 默认进入django页面
+from django.urls import path, include
+from nlp_web import views
+
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('', views.hello, name='hello'),                 # 首页界面
+    path('admin/', admin.site.urls),                     # 后台管理模块
+    path('nlp/', include('nlp_web.urls')),                  # 第一个app包含的所有url(自然语言处理）
+    path('blogs/', include('blog_comment.urls')),           # 第二个app包含的所有url(博客系统）
+    path('media/', include('my_media.urls')),               # 第三个app包含的所有url(多媒体系统）
+    path('location/', include('location_transform.urls')),  # 第四个app包含的所有url(经纬度转换系统）
+    path('api/', include('api.urls')),  # 第四个app包含的所有url(经纬度转换系统）
+    path('student/', include('student_sys.urls')),  # 第四个app包含的所有url(学生系统）
 ]
+

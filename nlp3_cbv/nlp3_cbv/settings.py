@@ -37,7 +37,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'api.apps.ApiConfig',
+    'rest_framework',  # rest_framework框架
+    'nlp_web',  # 注册自然语言处理app
+    'blog_comment',  # 注册博客系统app
+    "location_transform",  # 注册地理转换app
+    'my_media',  # 注册多媒体播放app
+    'api',  # 注册用于练习Django rest framework 各个组件的app
+    "student_sys.apps.StudentSysConfig",  # 租车学生练习项目、注册qpp的另一种方式、推荐使用
 ]
 
 MIDDLEWARE = [
