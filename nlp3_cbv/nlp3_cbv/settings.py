@@ -25,8 +25,13 @@ SECRET_KEY = 'gwd3umv#b(bpkm6_9yyclwn_66-l+w(2w+t$3qujvcc^3jsuas'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# 允许的主机
+ALLOWED_HOSTS = ['*']
 
+# 下面的配置是解决跨域的问题
+CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_CREDENTIALS= True
+CORS_ALLOW_HEADERS = ('*')
 
 # Application definition
 
@@ -88,6 +93,21 @@ DATABASES = {
     }
 }
 
+# 数据库相关配置 MySQL数据库的配置方法
+# DATABASES = {
+#     'default': {
+#         # 链接数据库类型
+#         'ENGINE': 'django.db.backends.mysql',
+#         'HOST': '127.0.0.1',
+#         'PORT': 3306,
+#         'NAME': 'test',
+#         'USER': 'root',
+#         'PASSWORD': '123456',
+#
+#         # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
@@ -111,18 +131,40 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'zh-hans'  # 语言
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Shanghai'  # 时区
 
-USE_I18N = True
+USE_I18N = True  # 语言
 
-USE_L10N = True
+USE_L10N = True  # 数据和时间格式
 
-USE_TZ = True
+USE_TZ = True  # 启用时区
+
+# from api.utills.authenticate import TestAuthentication1
+# 配置rest framework 的全局配置、项目中所有的app都苏姚通过认证、和权限
+# REST_FRAMEWORK = {
+#     'UNAUTHENTICATED_USER': None,  # 未认证用户默认值
+#     'UNAUTHENTICATED_TOKEN': None,  # 未认证用户token值
+#     # 认证
+#     "DEFAULT_AUTHENTICATION_CLASSES": [
+#         "api.utills.authenticate.TestAuthentication1",
+#     ],
+#     # 权限（未实现）
+#     "DEFAULT_PERMISSION_CLASSES": [
+#         "api.utils.permission.TestPermission",
+#     ],
+# }
 
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = '/static/'  # 静态文件别名
+
+# 设置静态文件路径(CSS, JavaScript, Images)
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+    ]  # 列表、可以配置多个静态文件路径
+
+
