@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="14fd25a1-1bd1-483a-9d86-1a1bd2788165" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nlp3_cbv/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/nlp3_cbv/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nlp3_cbv/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/nlp3_cbv/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,8 +30,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/nlp3_cbv/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-387">
-              <caret line="48" column="14" lean-forward="true" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
+            <state relative-caret-position="3288">
+              <caret line="167" column="24" selection-start-line="167" selection-start-column="24" selection-end-line="167" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -76,11 +74,6 @@
               <item name="nlp3_cbv" type="b2602c69:ProjectViewProjectNode" />
               <item name="nlp3_cbv" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="nlp3_cbv" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nlp3_cbv" type="462c0819:PsiDirectoryNode" />
-              <item name="nlp3_cbv" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -90,6 +83,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -141,7 +135,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571381128957</updated>
-      <workItem from="1571381130315" duration="1728000" />
+      <workItem from="1571381130315" duration="2217000" />
     </task>
     <task id="LOCAL-00001" summary="创建Django项目">
       <created>1571381633020</created>
@@ -164,18 +158,38 @@
       <option name="project" value="LOCAL" />
       <updated>1571382561283</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="安装Django rest framework库、创建my_media app">
+      <created>1571383012173</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1571383012173</updated>
+    </task>
+    <task id="LOCAL-00005" summary="安装Django rest framework库、创建my_media app">
+      <created>1571383089469</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1571383089469</updated>
+    </task>
+    <task id="LOCAL-00006" summary="更改配置文件">
+      <created>1571383376705</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1571383376705</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1728000" />
+    <option name="totallyTimeSpent" value="2217000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -207,7 +221,9 @@
     <MESSAGE value="创建Django项目" />
     <MESSAGE value="创建blog_comment app" />
     <MESSAGE value="创建nlp_web、student_sys、location_transform app" />
-    <option name="LAST_COMMIT_MESSAGE" value="创建nlp_web、student_sys、location_transform app" />
+    <MESSAGE value="安装Django rest framework库、创建my_media app" />
+    <MESSAGE value="更改配置文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="更改配置文件" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/nlp3_cbv/urls.py">
@@ -222,8 +238,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/nlp3_cbv/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-387">
-          <caret line="48" column="14" lean-forward="true" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
+        <state relative-caret-position="3288">
+          <caret line="167" column="24" selection-start-line="167" selection-start-column="24" selection-end-line="167" selection-end-column="24" />
         </state>
       </provider>
     </entry>
